@@ -46,7 +46,7 @@ export default defineConfig(({ command }) => {
     ],
     //для обработки `simplelightbox`
     optimizeDeps: {
-      include: ['simplelightbox'], // Укажите библиотеку здесь
+      include: ['simplelightbox'],
     },
   };
 });
