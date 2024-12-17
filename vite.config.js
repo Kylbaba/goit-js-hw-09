@@ -44,5 +44,9 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
+    //для обработки `simplelightbox`
+    optimizeDeps: {
+      include: ['simplelightbox'], // Укажите библиотеку здесь
+    },
   };
 });
