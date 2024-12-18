@@ -27,7 +27,6 @@ export default defineConfig(({ command }) => {
             return '[name].js';
           },
           assetFileNames: assetInfo => {
-            console.log('assetInfo', assetInfo)
             if (assetInfo.name && assetInfo.name.endsWith('.html')) {
               return '[name].[ext]';
             }
@@ -46,8 +45,8 @@ export default defineConfig(({ command }) => {
       }),
     ],
     //для обработки `simplelightbox`
-    optimizeDeps: {
-      include: ['simplelightbox'],
-    },
+    // optimizeDeps: {
+    //   include: ['simplelightbox'],
+    // },
   };
 });
