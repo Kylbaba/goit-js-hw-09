@@ -88,10 +88,9 @@ const images = [
     galleryContainer.innerHTML = gallery.join('');
   }
   createGallery(images);
-  const gallery = new SimpleLightbox('.gallery a', {
+  const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250,
     className: 'lightbox',
     overlayOpacity: 0.8,
   });
-  gallery.on('show.simplelightbox', function () {});
